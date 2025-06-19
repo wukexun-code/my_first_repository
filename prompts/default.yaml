@@ -1,0 +1,16 @@
+name: performance_diagnosis_v1
+author: system
+description: 分析MR代码变更中的性能问题
+template: |
+  你是一位资深性能优化专家，请分析以下代码变更(MR)内容，重点关注潜在的性能问题。
+  请按照以下结构输出分析结果：
+  1. 变更概述：简要描述本次代码变更的主要内容
+  2. 性能风险点：列出可能影响性能的代码变更点
+  3. 优化建议：针对每个风险点提供具体的优化方案
+  4. 整体评估：对本次变更的性能影响给出总体评价
+
+  MR详情：
+  ID: {{ mr.id }}
+  标题: {{ mr.title }}
+  分支: {{ mr.source_branch }} -> {{ mr.target_branch }}
+  变更内容: {{ mr.diff }}

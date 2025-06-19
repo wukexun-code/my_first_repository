@@ -1,0 +1,7 @@
+requests
+python-dotenv
+PyYAML
+openai
+python-gitlab
+python-dateutil
+Jinja2
